@@ -132,12 +132,13 @@ def str1(cc: str) -> str:
     try:
         return StripeProcessor(cc).process_payment_authorization()
     except requests.RequestException as e:
-        return f"NetworkError: {e}"
+        return f"NetworkError"
     except Exception as e:
-        return f"UnhandledError: {e}"
+        return f"UnhandledError"
         
         
         
         
 def check(card):
     return str1(card)        
+time.sleep(5)
