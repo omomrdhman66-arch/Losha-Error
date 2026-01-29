@@ -9,7 +9,7 @@ from storage.repositories.bans import is_banned
 from storage.db import get_connection
 
 from security.channel_guard import is_channel_subscribed, send_channel_prompt
-from config.settings import OWNER_HTML
+from config.settings import TOOL_BY
 
 
 VIDEO_LINKS = [
