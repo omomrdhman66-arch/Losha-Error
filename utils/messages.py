@@ -117,7 +117,7 @@ def declined_message(cc, last, gate_name, execution_time, dato_func):
 
 
 # ================= HIT DETECTED =================
-def hit_detected_message(hit_number, name, status_type, execution_time, gateway):
+def hit_detected_message(name, status_type, execution_time, gateway):
     status_map = {
         "approved": "Approved ✅",
         "charged": "Charged ⚡",
@@ -127,7 +127,7 @@ def hit_detected_message(hit_number, name, status_type, execution_time, gateway)
     status_text = status_map.get(status_type.lower(), status_type)
 
     return f"""<b>
-[{CHANNEL_ICON}] 𝗛𝗶𝘁 𝗗𝗲𝘁𝗲𝗰𝘁𝗲𝗱 #{hit_number} 🔥
+[{CHANNEL_ICON}] 𝗛𝗶𝘁 𝗗𝗲𝘁𝗲𝗰𝘁𝗲𝗱 🔥
 - - - - - - - - - - - - - - - - - - - -
 [{CHANNEL_ICON}] 𝐍𝐚𝐦𝐞: {name}
 [{CHANNEL_ICON}] 𝐒𝐭𝐚𝐭𝐮𝐬: {status_text}
