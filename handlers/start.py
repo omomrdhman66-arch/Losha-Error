@@ -102,7 +102,7 @@ def register_start(bot):
 ⏱ Remaining  : {vip_remaining} min
 
 - Send your combo to check
-ϟ Tool By ⇾ {OWNER_HTML} ϟ
+ϟ Tool By ⇾ {TOOL_BY} ϟ
 """
         elif balance == -1:
             caption = f"""✨ Welcome {name} ✨
@@ -110,7 +110,7 @@ def register_start(bot):
 💳 Credits : Unlimited
 
 - Send your combo to check
-ϟ Tool By ⇾ {OWNER_HTML} ϟ
+ϟ Tool By ⇾ {TOOL_BY} ϟ
 """
         elif balance > 0:
             caption = f"""✨ Welcome {name} ✨
@@ -119,15 +119,15 @@ def register_start(bot):
 
 - Send your combo to check
 - Use /buy to get more credits
-ϟ Tool By ⇾ {OWNER_HTML} ϟ
+ϟ Tool By ⇾ {TOOL_BY} ϟ
 """
         else:
             caption = f"""✨ Welcome {name} ✨
 
 ❌ No Credits Available
 
-/cmds | /buy
-ϟ Tool By ⇾ {OWNER_HTML} ϟ
+Use /buy to get credits
+ϟ Tool By ⇾ {TOOL_BY} ϟ
 """
 
         # 🎬 Send video
