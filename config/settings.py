@@ -9,7 +9,7 @@ HIT_CHAT = -1002465727289
 # ===== HTML PARTS =====
 CHANNEL_URL = f"https://t.me/{CHANNEL_USERNAME}"
 CHANNEL_ICON = f'<a href="{CHANNEL_URL}">ϟ</a>'
-
+ADMIN_GROUP = -1003835743935
 # رابط المالك باستخدام tg://user?id=ID
 OWNER_URL = f"tg://user?id={OWNER_ID}"
 OWNER_HTML = f'<a href="{OWNER_URL}">{OWNER_NAME}</a>'
