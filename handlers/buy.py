@@ -12,8 +12,6 @@ from storage.repositories.bans import is_banned
 def get_packages():
     conn = get_connection()
     cur = conn.cursor()
-    uid = message.from_user.id
-    user_id = message.from_user.id
     cur.execute("""
         SELECT id, credits, stars, bonus
         FROM buy_packages
