@@ -9,7 +9,7 @@ from storage.repositories.bans import is_banned
 from storage.db import get_connection
 
 from security.channel_guard import is_channel_subscribed, send_channel_prompt
-from config.settings import TOOL_BY
+from config.settings import TOOL_BY, OWNER_NAME 
 
 
 VIDEO_LINKS = [
@@ -89,7 +89,7 @@ def register_start(bot):
         kb = types.InlineKeyboardMarkup()
         kb.add(
             types.InlineKeyboardButton(
-                f"ϟ Tool By ⇾ {TOOL_BY} ϟ",
+                f"ϟ Tool By ⇾ {OWNER_NAME} ϟ",
                 url="https://t.me/I_EOR"
             )
         )
