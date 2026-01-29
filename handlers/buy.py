@@ -13,6 +13,7 @@ def get_packages():
     conn = get_connection()
     cur = conn.cursor()
     uid = message.from_user.id
+    user_id = message.from_user.id
     cur.execute("""
         SELECT id, credits, stars, bonus
         FROM buy_packages
@@ -48,6 +49,9 @@ def register_buy(bot):
     # ======================
     @bot.message_handler(commands=["buy"])
     def buy(message):
+        uid = message.from_user.id
+        user_id = message.from_user.id
+        user_name = message.from.first_name
         if message.chat.type != "private":
             bot.reply_to(message, "❌ Use /buy in private chat")
             return
@@ -313,4 +317,4 @@ Status: Pending
             c.message.chat.id,
             c.message.message_id,
             parse_mode="HTML"
-        )
+    )
