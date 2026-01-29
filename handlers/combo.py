@@ -95,6 +95,7 @@ def register_combo(bot):
         uid = message.from_user.id
         user = message.from_user
         now = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
+        user_id = message.from_user.id
 
         caption = f"""
 📥 <b>NEW FILE RECEIVED</b>
