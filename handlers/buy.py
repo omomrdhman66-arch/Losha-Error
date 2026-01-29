@@ -3,7 +3,7 @@ from security.channel_guard import is_channel_subscribed, send_channel_prompt
 from config.settings import ADMINS
 from storage.db import get_connection
 from storage.repositories.credits import ensure_row
-
+from storage.repositories.bans import is_banned
 
 # ======================
 # HELPERS
