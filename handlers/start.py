@@ -89,7 +89,7 @@ def register_start(bot):
         kb = types.InlineKeyboardMarkup()
         kb.add(
             types.InlineKeyboardButton(
-                f"ϟ Tool By ⇾ {OWNER_HTML} ϟ",
+                f"ϟ Tool By ⇾ {TOOL_BY} ϟ",
                 url="https://t.me/I_EOR"
             )
         )
