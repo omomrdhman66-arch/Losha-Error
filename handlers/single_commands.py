@@ -116,6 +116,8 @@ def register_single_commands(bot):
     def run_single_check(message, gate_key, card):
         user_id = message.from_user.id
         user_name = get_user_name(message.from_user)
+        name = message.from_user.first_name or "Hidden"
+        username = message.from_user.username
 
         # 🚫 BANNED
         if is_banned(user_id):
