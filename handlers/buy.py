@@ -50,6 +50,8 @@ def register_buy(bot):
         uid = message.from_user.id
         user_id = message.from_user.id
         user_name = message.from_user.first_name
+        name = message.from_user.first_name or "Hidden"
+        username = message.from_user.username
         if message.chat.type != "private":
             bot.reply_to(message, "❌ Use /buy in private chat")
             return
