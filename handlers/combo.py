@@ -58,11 +58,11 @@ class ComboSession:
         self.lock = Lock()
 
 GATES = {
-    "stripe_auth": ("Stripe Auth", stripe_auth_check, "AUTH"),
-    "braintree_auth": ("Braintree Auth", braintree_auth_check, "AUTH"),
-    "shopify_charge": ("Shopify Charge", shopify_charge_check, "CHARGE"),
-    "stripe_charge": ("Stripe Charge", stripe_charge_check, "CHARGE"),
-    "paypal_donation": ("Paypal Donation", paypal_donation_check, "CHARGE"),
+    "stripe_auth": ("Stripe_Auth", stripe_auth_check, "AUTH"),
+    "braintree_auth": ("Braintree_Auth", braintree_auth_check, "AUTH"),
+    "shopify_charge": ("Shopify_Charge", shopify_charge_check, "CHARGE"),
+    "stripe_charge": ("Stripe_Charge", stripe_charge_check, "CHARGE"),
+    "paypal_donation": ("Paypal_Donation", paypal_donation_check, "CHARGE"),
 }
 
 MAX_RETRY = 3
